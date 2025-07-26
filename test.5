@@ -24,3 +24,6 @@ class Student {
     };
 
 void addStudent() {
+Student s;
+    ofstream out("students.dat", ios::binary | ios::app);
+    s.input();
