@@ -41,3 +41,6 @@ void viewAll() {
     }
 
 void searchStudent(int roll) {
+ Student s;
+    ifstream in("students.dat", ios::binary);
+    bool found = false;
