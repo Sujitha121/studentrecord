@@ -27,3 +27,6 @@ void addStudent() {
 Student s;
     ofstream out("students.dat", ios::binary | ios::app);
     s.input();
+    out.write((char*)&s, sizeof(s));
+    out.close();
+}
