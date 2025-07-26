@@ -32,3 +32,5 @@ Student s;
 }
 void viewAll() {
     Student s;
+ ifstream in("students.dat", ios::binary);
+    cout << left << setw(10) << "Roll" << setw(20) << "Name" << "Marks" << endl;
