@@ -44,3 +44,6 @@ void searchStudent(int roll) {
  Student s;
     ifstream in("students.dat", ios::binary);
     bool found = false;
+    while (in.read((char*)&s, sizeof(s))) {
+        if (s.getRoll() == roll) {
+            s.display();
