@@ -47,3 +47,6 @@ void searchStudent(int roll) {
     while (in.read((char*)&s, sizeof(s))) {
         if (s.getRoll() == roll) {
             s.display();
+	    found = true;
+            break;
+        }
